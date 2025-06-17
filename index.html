@@ -173,7 +173,7 @@
         const total = carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
 
         try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbwKq0QG7b1DzF2BGDybUOQyLil1I50zR2z0wtYTLUc0u-4oGKbtMdx3qvMoClkqH1O7bw/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbw7TkiIb00Cjx5DXpiJvwbSVUqT3CdXtR-MaGeDxAA6bSGK3tv2nCGONSXwkxQOHY1UmQ/exec', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nombre, celular, metodoPago, carrito, total })
